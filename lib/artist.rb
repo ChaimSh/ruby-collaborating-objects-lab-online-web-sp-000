@@ -23,6 +23,7 @@ end
 
 
 def self.find_or_create_by_name(name)
+<<<<<<< HEAD
   # if @@all.find {|artist| artist.name == name}
   #   name
   #  else
@@ -41,6 +42,14 @@ def self.create(name)
 end
 
 
+=======
+  if @@all.find {|artist| artist.name == name}
+   else
+     self.new(name)
+   end
+ end
+
+>>>>>>> 52a67f875278f463f57d707820ee59cc93c7e5b0
 def print_songs
 @songs.each {|song| puts song.name}
 end
